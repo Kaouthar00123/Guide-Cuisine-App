@@ -1,0 +1,25 @@
+A note : vous aurez besion d'internet pour acces au lien bootstrap, et trie se fait par pagination
+Description par page:
+
+page nutrition: peut filtrer et trie les colones en selecionnat la colone ( a noter il trie selon les donné de paginiation pas par rapport totale, si vous voulez toutale afficher le max des lignes)
+page fete et saison: peut faire filtrage selon bare afficher, et saison filtrage selon recetes contenant des ingredients de saison selectioné et par default il affice recette contenat des ingredinet de saison courant
+page healty: affiche les recetes healty, idéé qu'une recette est considere healty soit par un attribut de reccetes aura à 1 entre par admin, ou par les criteres suivants:
+    recettes tous ses methodes de cuissances sont bonne, et tous des ingredents ont attribut healty à 1, et somme de son calorie de depasse pas seuil donné par admin dans taleau des parametes
+
+page idee recetes : affiche par defaut les recete meix note et de saison en cour (saison de recette est un attribut dans recette), et il peut cherche des recettes par recherche par ingredient
+a note j'avait compris que filtrage et triyage de cette page sont generale genren il trie tous les recettes dans la bases selon critere pas selelment celle affiche c'est pour ça tout se fait passant par la base, donc j'allais compris ça la derniere minute donc j'avais pas le temp de le changé
+le filtrage est multi critere, et en cas des valeurs numrique utlisateur peut entrer un intervalle
+
+profil utlisateur, il peut ajouter et visualiser ses prefernces , et note recete (de tel sort que la note de recete devient moyenne de note precendant avec celle intriduit par utlisateur)
+
+
+
+Admin: lien acess admin: /indexAdmin.php
+parametre: affiche le nom et valeur de parametre, il peut suprimer, ajouter et edite une parametre , et faire filtrage
+nutrition: peuvent filtrer, ajouter, suprimer et editer
+gestion utlisateur: pevent filtrer et suprimer
+news: peut filtre, suprimer et editer et ajouter news
+recette: peut suprimer, editer, ajouter , filtrer et trie les recetes
+
+attention a ne pas inser des guimmet dans contexte, est sensible d'affichage, et il faut respcet format specefier pour ajouter des informations d'une recette, 
+lors d'insertion faut ingredient : quantite:ingredient example: 3:oeuf, et methode: methode:1 bonne  ou 0 pas_bonne example: frire:0, 

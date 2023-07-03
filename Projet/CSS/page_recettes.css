@@ -1,0 +1,296 @@
+
+/*************************************PAGE DE TOUS LES RECETTES***************************/
+:root{
+
+    --blackMain:#2e2e2e ;
+    --gray:#c3bfbf ;
+    --whiteMain: #ffffffd4 ; 
+    --redMain: #ff00007d; 
+
+    --marginContainerTop_page_receette: -8px;
+    --marginContainerleft_page_receette: 5%;
+}
+
+.contenue_page_catego_recettes /* body de page reccetes apres menu */
+{
+    display: flex; flex-direction: row;
+}
+
+.recettes_page_recettes{ /* contenueur des recettes*/
+    display: flex; flex-direction: column;
+}
+
+.triyage_page_recettes, .filtrage_page_recettes{
+    margin-left: calc( -1 * var(--marginContainerleft_page_receette));
+    height: fit-content;
+    padding: 2%;
+    margin-bottom: 5%;
+    
+    background-color: #c3bfbf4f;
+    
+    border-radius: 10px;
+    margin-right: 2%;
+
+    width: 200px;
+
+
+}
+.triyage_page_recettes span, .filtrage_page_recettes span{
+    font-size: larger;
+    margin-bottom: 5%;
+}
+
+.triyage_filtre{
+    display: flex; flex-direction: column;
+}
+
+.triyage_page_recettes form{
+    
+    margin-left: -2%;
+}
+
+.critere{
+    border-top: 1px solid black;
+    /* border-radius: 10px; */
+    margin: 3%;
+}
+
+.groupe_recettes{
+    display: flex;
+}
+.recetteC{
+    width: 25%;
+    font-size: 14px;
+}
+
+.recetteC img{
+    width: 100%;
+    height: 200px;
+}
+
+.recetteC span{
+    font-style: italic;  font-size: 16px;
+    margin-bottom: 2%;
+}
+
+
+
+/********************************page recettes***********************/
+.recetteL{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray);
+    margin: 2%;
+    padding: 1%;
+    color: #252323;
+    font-size: 16px;
+
+}
+/* .recetteL img{
+    width: 70%;
+    height: 100%;
+} */
+
+
+.GrandConteneur_recettes
+{
+    margin: var(--marginContainerTop_page_receette) var(--marginContainerleft_page_receette);
+}
+
+
+/*****************************************PAGE IDEE RECETTE*********************************/
+#forme_idee_recette{
+    margin:2%;
+}
+
+#form_nb_ingredient{
+    display: none;
+    margin-top: 3%;
+}
+#form_ingredient{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2%;
+    width: 30%;
+}
+
+#form_ingredient input{
+    border-radius: 20px;
+    border-color: gray;
+    width: 100%;
+    height: 30px;
+    border-color: #ebe8e8;
+}
+
+#form_ingredient #btn_rech_idee_recette{
+    width: fit-content;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color: #aab9a14d;
+    border-color: transparent;
+}
+
+#btn_rech{
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #aab9a14d;
+    height: 40px;
+    margin: 2% 2% 2% -2%
+}
+.Form_rech{
+    display: flex;
+}
+.input_simple{
+    border-radius: 20px;
+    border-color: #80808078;
+    height: 30px;
+}
+
+.btn_simple{
+    border-radius: 20px;
+    border-color: transparent;
+    height: 30px;
+}
+
+
+/***************************Form recette***************************/
+.container_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container_form form{
+    background-color: #8080802e;
+    border-radius: 20px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+.container_form form input{
+    border-radius: 20px;
+    border-color: transparent;
+    height: 30px;
+}
+.container_form form button{
+    background-color: #4caf502e;
+    border-color: transparent;
+    width: fit-content;
+}
+
+
+/********************************Style tableaux des ingredients*************/
+.contenu_page_nutri {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center
+}
+.title_ing{
+    margin: 2%;
+    font-size: larger;
+    color: #555555;
+}
+.pas_definie{
+    font-size: 13px;
+    color: gray;
+}
+.H{
+    font-size: 14px;
+    color: green;
+}
+.NH{
+    font-size: 14px;
+    color: red;
+}
+
+table thead tr:nth-child(1)
+,table tr td:nth-child(1) 
+ {
+    background-color: hsl(0,0%,85%);
+}
+table{
+    border-style: inherit;
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 1px solid #8080807d;
+    padding: 1%;
+}
+
+
+
+
+/*********************** PAGE CONTACT ***********/
+.contenu_page_contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #80808017 ;
+    padding: 2%;
+    color: gray;
+}
+
+.sous_entete{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sous_entete .title 
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cercle{
+    margin-right: 2%;
+}
+.Form_mail{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.Email{
+    display: flex;
+}
+
+.Email i{
+    font-size: 30px
+}
+
+form#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px
+}
+
+
+form#contact input{
+    border-color: transparent;
+    margin-bottom: 5%;
+    padding: 2%;
+    height: 40px;
+}
+
+.send button{
+    border-color: transparent;
+    background-color: #00800029;
+}
+
+
+
+

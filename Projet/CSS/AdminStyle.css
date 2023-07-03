@@ -1,0 +1,166 @@
+a, ul, table, h1{
+    text-decoration: none;
+}
+
+/******************STYLE ADMIN *************/
+:root{
+    --blackMain:#2e2e2e ;
+    --gray:#c3bfbf ;
+    --whiteMain: #ffffffd4 ; 
+    --redMain: #ff00007d; 
+
+    --marginContainerTop: -8px;
+    --marginContainerleft: 3%;
+}
+.GrandConteneur{
+    margin: var(--marginContainerTop) var(--marginContainerleft);
+}
+/****************header********************/
+#header{
+    position: sticky;  top: 0px;  z-index: 10;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--whiteMain);
+    margin-bottom: 1%;
+    /* border-radius: 20px; */
+}
+#header .logo img{
+    width: 80px;
+    height: 65px;
+    border-radius: 20px;
+}
+#header .icon{
+    margin-right: 10px;
+    color: black;
+}
+#header .title{
+    font-size: 20px;
+    padding: 0px 0px 10px;
+    border-bottom: 1px solid black;
+}
+#header .droite{
+    display: flex;
+    gap: 10px;
+}
+#header .connecte{
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: #8080801f;
+    padding: 2px 5px;
+    height: 30px;
+}
+/*******************/
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title{
+    font-size: larger;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+}
+
+/********************add recette*************************/
+
+.container_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form_admin{
+    background-color: #8080802e;
+    border-radius: 20px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.form_admin input{
+    border-radius: 20px;
+    border-color: transparent;
+    height: 30px;
+}
+
+
+form#add_recette, form#add_ing, form#add_news, form#add_user, form#add_para {
+    display: none;
+    margin-bottom: 2%;
+}
+
+
+div#ings{
+    margin: 2% 0px;
+}
+
+/********************tableau***********/
+.title_table{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    background-color: #8080802b;
+    margin: 1% 0 1%;
+}
+
+.btn_admin{
+    border-color: transparent;
+    border-radius: 10px;
+    /* background-color: #00800033; */
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green{
+    background-color: #00800033;
+}
+
+table input{
+    border-color: transparent;
+}
+
+.wrapper{
+    max-height: 60vh;
+    overflow-y: auto;
+    max-width: 200vh;
+    overflow-x: auto;
+    /* display:inline-block; */
+}
+
+
+/***************design de formulaire login********/
+
+.formeTab1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+form#login{
+    background-color: #8080801a;
+    padding: 2%;
+}
+
+form#login input {
+    border-color: transparent;
+    height: 30px;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+
+
+
